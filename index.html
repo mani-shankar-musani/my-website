@@ -11,6 +11,7 @@
       padding: 0;
       background-color: #f2f2f2;
       color: #333;
+      display: flex; /* New: Flexbox for layout */
     }
 
     h1 {
@@ -18,10 +19,27 @@
       padding: 2rem;
       font-size: 2.5rem;
       margin: 0;
+      flex: 1; /* New: Take up remaining space */
+    }
+
+    .profile-picture {
+      width: 150px; /* Adjust width as needed */
+      margin: 2rem auto; /* Center image horizontally */
+      border-radius: 50%; /* Make image circular */
+    }
+
+    .resume {
+      flex: 2; /* New: Take up twice the space as heading */
+      padding: 2rem;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Mani Shankar's Website!</h1>
+  <img src="your_profile_picture.jpg" alt="Mani Shankar's Profile Picture" class="profile-picture">  
+  <div class="resume">
+    <h2>Resume</h2>
+    <p>Write your professional experience, skills, and education here.</p>
+  </div>
 </body>
 </html>
